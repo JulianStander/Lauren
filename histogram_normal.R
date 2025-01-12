@@ -1,6 +1,9 @@
 n <- 1000
 #
-y <- rnorm(n)
+# Generate a sample from a t distrubtion
+# with 2 degrees of freedom
+#
+y <- rt(n, 2)
 #
 df <- data.frame(y)
 #
@@ -10,4 +13,5 @@ ggplot(df,
        aes(x = y)) +
   geom_histogram()
 #
-ggsave("histogram_normal.pdf")
+ggsave("histogram_t.pdf")
+#
