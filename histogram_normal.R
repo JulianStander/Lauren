@@ -1,9 +1,9 @@
 n <- 1000
 #
-# Generate a sample from a t distrubtion
-# with 2 degrees of freedom
+# Generate a sample from a exponential distrubtion
+# with lambda = 5
 #
-y <- rt(n, 2)
+y <- rexp(n, 5)
 #
 df <- data.frame(y)
 #
@@ -13,5 +13,5 @@ ggplot(df,
        aes(x = y)) +
   geom_histogram()
 #
-ggsave("histogram_t.pdf")
+ggsave("histogram_exp.pdf")
 #
