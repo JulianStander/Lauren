@@ -15,3 +15,4 @@ ggplot(df,
 #
 ggsave("histogram_exp.pdf")
 #
+ggsave("histogram_exp.jpeg")
